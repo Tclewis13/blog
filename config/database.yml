@@ -29,9 +29,9 @@ test:
 # ensure the database is located in a persisted volume.
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  host: <%= ENV["PGHOST"] %>
-  database: <%= ENV["PGDATABASE"] %>
-  username: <%= ENV["PGUSER"] %>
-  password: <%= ENV["PGPASSWORD"] %>
-  port: <%= ENV["PGPORT"] %>
+  url: <%= ENV["MYSQL_URL"] %>
+  host: <%= ENV["MYSQLHOST"] %>
+  database: <%= ENV["MYSQLDATABASE"] %>
+  username: <%= ENV["MYSQLUSER"] %>
+  password: <%= ENV["MYSQLPASSWORD"] %>
+  port: <%= ENV["MYSQLPORT"] %>
