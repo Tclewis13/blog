@@ -31,7 +31,7 @@ production:
   <<: *default
   url: <%= ENV["MYSQL_URL"] %>
   host: <%= ENV["MYSQLHOST"] %>
-  database: <%= ENV["MYSQLDATABASE"] %>
+  database: <%= ENV["MYSQL_DATABASE"] %>
   username: <%= ENV["MYSQLUSER"] %>
   password: <%= ENV["MYSQLPASSWORD"] %>
   port: <%= ENV["MYSQLPORT"] %>
