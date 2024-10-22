@@ -29,7 +29,9 @@ test:
 # ensure the database is located in a persisted volume.
 production:
   <<: *default
-  database: blog_production
-  username: blog
-  password: <%= ENV["BLOG_DATABASE_PASSWORD"] %>
   url: <%= ENV["DATABASE_URL"] %>
+  host: <%= ENV["PGHOST"] %>
+  database: <%= ENV["PGDATABASE"] %>
+  username: <%= ENV["PGUSER"] %>
+  password: <%= ENV["PGPASSWORD"] %>
+  port: <%= ENV["PGPORT"] %>
